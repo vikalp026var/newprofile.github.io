@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Profile</title>
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Aboreto&family=Alkatra:wght@700&family=Anton&family=Josefin+Sans:ital,wght@0,200;0,400;1,100&family=Kanit:wght@300&family=Playfair+Display:wght@600&family=Poppins:wght@400;500&family=Ubuntu:wght@700&family=Work+Sans:wght@500&display=swap" rel="stylesheet">
+     <style>
+         
+         @media(min-width:50px ) and (max-width:767px)
+         {
+          *{
+               margin: 0px;
+               padding: 0px;
+          }
+          body{
+               font-family: 'Aboreto', cursive;
+               font-family: 'Alkatra', cursive;
+               font-family: 'Anton', sans-serif;
+               font-family: 'Josefin Sans', sans-serif;
+               font-family: 'Kanit', sans-serif;
+               font-family: 'Playfair Display', serif;
+               font-family: 'Poppins', sans-serif;
+               font-family: 'Ubuntu', sans-serif;
+               font-family: 'Work Sans', sans-serif;
+               background-image: url("https://images.squarespace-cdn.com/content/v1/5bc45b089d414907dba4cfc3/1577116148645-S4LI55XIUYVLHTAI29GC/background-2462431_1280.jpg?format=2500w");  
+               
+          }
+          #f0{
+              
+              border:10px solid #151E3D;
+              height: 20dvh;
+              width: 40dvh;
+              background-color: #151E3D;
+              margin-left: 10%;
+              margin-right: 15%; 
+              margin-top: 3%;
+              margin-bottom: 2%;            
+              text-align: center;
+              justify-content: center;
+              border-radius: 20px;
+              box-shadow: 0 0 20px #151E3D;
+              transition: width 3s,height 3s;
+              color: white;
+             
+         }
+         #f4{
+              
+              border:10px solid #151E3D;
+              height:5dvh;
+              width: 40dvh;
+              background-color: #151E3D;
+              margin-left: 10%;
+              margin-right: 15%; 
+              margin-top: 5%;
+              margin-bottom: 2%;            
+              text-align: center;
+              justify-content: center;
+              border-radius: 20px;
+              box-shadow: 0 0 20px #151E3D;
+              transition: width 3s,height 3s;
+              color: white;
+         }
+         #f1{
+              
+              border:10px solid #151E3D;
+              height: 35dvh;
+              width: 40dvh;
+              background-color: #151E3D;
+              margin-left: 10%;
+              margin-right: 15%; 
+              margin-top: 5%;
+              margin-bottom: 2%;            
+              text-align: center;
+              justify-content: center;
+              border-radius: 15%;
+              box-shadow: 0 0 20px #151E3D;
+              transition: width 3s,height 3s;
+              overflow: auto;
+             
+         }
+         #f2{
+              
+              border:10px solid #151E3D;
+              height: 35dvh;
+              width: 40dvh;
+              background-color: #151E3D;
+               margin-left: 10%;
+              margin-right: 15%;  
+              margin-top: 5%;
+              margin-bottom: 2%;            
+              text-align: center;
+              justify-content: center;
+              border-radius: 15%;
+              box-shadow: 0 0 20px #151E3D;
+              transition: width 3s,height 3s;
+              overflow: auto;
+             
+         }
+         #f3{
+              
+              border:10px solid #151E3D;
+              height: 35dvh;
+              width: 40dvh;
+              background-color: #151E3D;
+              margin-left: 10%;
+              margin-right: 15%; 
+              margin-top: 5%;
+              margin-bottom: 2%;            
+              text-align: center;
+              justify-content: center;
+              border-radius: 15%;
+              box-shadow: 0 0 20px #151E3D;
+              transition: width 3s,height 3s;
+              overflow: auto;
+              
+         }
+         #f5{
+             
+             border:10px solid #151E3D;
+             height: 5dvh;
+             width: 40dvh;
+             background-color: #151E3D;
+              margin-left: 10%;
+             margin-right: 15%;  
+             margin-top: 5%;
+             margin-bottom: 2%;            
+             text-align: center;
+             justify-content: center;
+             border-radius: 20px;
+             box-shadow: 0 0 20px #151E3D;
+             transition: width 3s,height 3s;
+             color: white;
+        }
+        #f6{
+             
+             border:10px solid #151E3D;
+             height: 5dvh;
+             width: 40dvh;
+             background-color: #151E3D;
+             margin-left: 10%;
+             margin-right: 15%; 
+             margin-top: 5%;
+             margin-bottom: 2%;            
+             text-align: center;
+             justify-content: center;
+             border-radius: 20px;
+             box-shadow: 0 0 20px #151E3D;
+             transition: width 3s,height 3s;
+             color: white;
+        }
+         #f0:hover{
+          height: 11dvh;
+          width: 50dvh;
+          cursor: pointer;
+         }
+         #f1:hover,#f2:hover,#f3:hover{
+          height: 40dvh;
+          width: 50dvh;
+          cursor: pointer;
+          animation-name: colgroup;
+         }
+         #f4:hover,#f5:hover,#f6:hover{
+          height: 6dvh;
+          width: 50dvh;
+          cursor: pointer;
+         }
+         .laptop{
+          display: none;
+         }
+       
+
+         
+         }
+         
+         
+         @media(min-width:768px) and (max-width:1200px){
+          *{
+               margin: 0px;
+               padding: 0px;
+          }
+          body{
+               font-family: 'Aboreto', cursive;
+               font-family: 'Alkatra', cursive;
+               font-family: 'Anton', sans-serif;
+               font-family: 'Josefin Sans', sans-serif;
+               font-family: 'Kanit', sans-serif;
+               font-family: 'Playfair Display', serif;
+               font-family: 'Poppins', sans-serif;
+               font-family: 'Ubuntu', sans-serif;
+               font-family: 'Work Sans', sans-serif;
+               background-color: white;
+                /* background-image: url("https://img.freepik.com/free-vector/modern-technology-background-with-connecting-lines-dots_1048-7461.jpg?w=996&t=st=1686993296~exp=1686993896~hmac=fbb052d7119eaf78e7a7ac7cb579d72d3d14641c62742acd22d225757ec646db");  */
+                background-image: url("https://images.squarespace-cdn.com/content/v1/5bc45b089d414907dba4cfc3/1577116148645-S4LI55XIUYVLHTAI29GC/background-2462431_1280.jpg?format=2500w"); 
+          }
+          #f0{
+              
+              border:10px solid #151E3D;
+              height: 7dvh;
+              width: 150dvh;
+              background-color: #151E3D;
+              margin-left: 15%;
+              margin-right: 15%; 
+              margin-top: 2%;
+              margin-bottom: 2%;            
+              text-align: center;
+              justify-content: center;
+              border-radius: 20px;
+              box-shadow: 0 0 20px #151E3D;
+              transition: width 3s,height 3s;
+             
+         }
+          #f1{
+              
+               border:10px solid #151E3D;
+               height: 35dvh;
+               width: 150dvh;
+               background-color: #151E3D;
+               margin-left: 1%;
+               margin-right: 15%; 
+               margin-top: 5%;
+               margin-bottom: 2%;            
+               text-align: center;
+               justify-content: center;
+               border-radius: 15%;
+               box-shadow: 0 0 20px #151E3D;
+               transition: width 3s,height 3s;
+               overflow: auto;
+              
+          }
+          #f2{
+              
+              border:10px solid #151E3D;
+              height: 35dvh;
+              width: 150dvh;
+              background-color: #151E3D;
+              /* margin-left: 15%;
+              margin-right: 15%;  */
+              margin-top: 5%;
+              margin-bottom: 2%;            
+              text-align: center;
+              justify-content: center;
+              border-radius: 15%;
+              box-shadow: 0 0 20px #151E3D;
+              transition: width 3s,height 3s;
+              overflow: auto;
+         }
+         #f3{
+              
+              border:10px solid #151E3D;
+              height: 35dvh;
+              width: 150dvh;
+              background-color: #151E3D;
+              margin-left: 15%;
+              margin-right: 1%; 
+              margin-top: 5%;
+              margin-bottom: 2%;            
+              text-align: center;
+              justify-content: center;
+              border-radius: 15%;
+              box-shadow: 0 0 20px #151E3D;
+              transition: width 3s,height 3s;
+              overflow: auto;
+              
+         }
+         #f4{
+              
+              border:10px solid #151E3D;
+              height: 4dvh;
+              width: 150dvh;
+              background-color: #151E3D;
+              margin-left: 1%;
+              margin-right: 15%; 
+              margin-top: 5%;
+              margin-bottom: 2%;            
+              text-align: center;
+              justify-content: center;
+              border-radius: 20px;
+              box-shadow: 0 0 20px #151E3D;
+              transition: width 3s,height 3s;
+         }
+         #f5{
+             
+             border:10px solid #151E3D;
+             height: 4dvh;
+             width: 150dvh;
+             background-color: #151E3D;
+             /* margin-left: 15%;
+             margin-right: 15%;  */
+             margin-top: 5%;
+             margin-bottom: 2%;            
+             text-align: center;
+             justify-content: center;
+             border-radius: 20px;
+             box-shadow: 0 0 20px #151E3D;
+             transition: width 3s,height 3s;
+        }
+        #f6{
+             
+             border:10px solid #151E3D;
+             height: 4dvh;
+             width: 150dvh;
+             background-color: #151E3D;
+             margin-left: 15%;
+             margin-right: 1%; 
+             margin-top: 5%;
+             margin-bottom: 2%;            
+             text-align: center;
+             justify-content: center;
+             border-radius: 20px;
+             box-shadow: 0 0 20px #151E3D;
+             transition: width 3s,height 3s;
+        }
+
+          legend{
+               background-color:#151E3D;
+          }
+          .main{
+              color: white;
+             
+
+          }
+          .tablet{
+               display: none;
+          }
+          
+         
+         .nav{
+          margin-top: 2px;
+          display: flex;
+          ;
+         }
+         .field{
+          display: flex;
+         }
+         .field1{
+          display: flex;
+         }
+         #f0:hover{
+          height: 8dvh;
+          width: 170dvh;
+          cursor: pointer;
+         }
+         #f1:hover,#f2:hover,#f3:hover{
+          height: 40dvh;
+          width: 170dvh;
+          cursor: pointer;
+         }
+         #f4:hover,#f5:hover,#f6:hover{
+          height: 5dvh;
+          width: 170dvh;
+          cursor: pointer;
+         }
+         
+
+
+         }
+         @media(min-width:1200px){
+          *{
+               margin: 0px;
+               padding: 0px;
+          }
+          body{
+               font-family: 'Aboreto', cursive;
+               font-family: 'Alkatra', cursive;
+               font-family: 'Anton', sans-serif;
+               font-family: 'Josefin Sans', sans-serif;
+               font-family: 'Kanit', sans-serif;
+               font-family: 'Playfair Display', serif;
+               font-family: 'Poppins', sans-serif;
+               font-family: 'Ubuntu', sans-serif;
+               font-family: 'Work Sans', sans-serif;
+               background-color: white;
+                /* background-image: url("https://img.freepik.com/free-vector/modern-technology-background-with-connecting-lines-dots_1048-7461.jpg?w=996&t=st=1686993296~exp=1686993896~hmac=fbb052d7119eaf78e7a7ac7cb579d72d3d14641c62742acd22d225757ec646db");  */
+                background-image: url("https://images.squarespace-cdn.com/content/v1/5bc45b089d414907dba4cfc3/1577116148645-S4LI55XIUYVLHTAI29GC/background-2462431_1280.jpg?format=2500w"); 
+          }
+          #f0{
+              
+              border:10px solid #151E3D;
+              height: 7dvh;
+              width: 150dvh;
+              background-color: #151E3D;
+              margin-left: 15%;
+              margin-right: 15%; 
+              margin-top: 2%;
+              margin-bottom: 2%;            
+              text-align: center;
+              justify-content: center;
+              border-radius: 20px;
+              box-shadow: 0 0 20px #151E3D;
+              transition: width 3s,height 3s;
+             
+         }
+          #f1{
+              
+               border:10px solid #151E3D;
+               height: 35dvh;
+               width: 150dvh;
+               background-color: #151E3D;
+               margin-left: 1%;
+               margin-right: 15%; 
+               margin-top: 5%;
+               margin-bottom: 2%;            
+               text-align: center;
+               justify-content: center;
+               border-radius: 15%;
+               box-shadow: 0 0 20px #151E3D;
+               transition: width 3s,height 3s;
+              
+          }
+          #f2{
+              
+              border:10px solid #151E3D;
+              height: 35dvh;
+              width: 150dvh;
+              background-color: #151E3D;
+              /* margin-left: 15%;
+              margin-right: 15%;  */
+              margin-top: 5%;
+              margin-bottom: 2%;            
+              text-align: center;
+              justify-content: center;
+              border-radius: 15%;
+              box-shadow: 0 0 20px #151E3D;
+              transition: width 3s,height 3s;
+         }
+         #f3{
+              
+              border:10px solid #151E3D;
+              height: 35dvh;
+              width: 150dvh;
+              background-color: #151E3D;
+              margin-left: 15%;
+              margin-right: 1%; 
+              margin-top: 5%;
+              margin-bottom: 2%;            
+              text-align: center;
+              justify-content: center;
+              border-radius: 15%;
+              box-shadow: 0 0 20px #151E3D;
+              transition: width 3s,height 3s;
+              
+         }
+         #f4{
+              
+              border:10px solid #151E3D;
+              height: 4dvh;
+              width: 150dvh;
+              background-color: #151E3D;
+              margin-left: 1%;
+              margin-right: 15%; 
+              margin-top: 5%;
+              margin-bottom: 2%;            
+              text-align: center;
+              justify-content: center;
+              border-radius: 20px;
+              box-shadow: 0 0 20px #151E3D;
+              transition: width 3s,height 3s;
+         }
+         #f5{
+             
+             border:10px solid #151E3D;
+             height: 4dvh;
+             width: 150dvh;
+             background-color: #151E3D;
+             /* margin-left: 15%;
+             margin-right: 15%;  */
+             margin-top: 5%;
+             margin-bottom: 2%;            
+             text-align: center;
+             justify-content: center;
+             border-radius: 20px;
+             box-shadow: 0 0 20px #151E3D;
+             transition: width 3s,height 3s;
+        }
+        #f6{
+             
+             border:10px solid #151E3D;
+             height: 4dvh;
+             width: 150dvh;
+             background-color: #151E3D;
+             margin-left: 15%;
+             margin-right: 1%; 
+             margin-top: 5%;
+             margin-bottom: 2%;            
+             text-align: center;
+             justify-content: center;
+             border-radius: 20px;
+             box-shadow: 0 0 20px #151E3D;
+             transition: width 3s,height 3s;
+        }
+
+          legend{
+               background-color:#151E3D;
+          }
+          .main{
+              color: white;
+             
+
+          }
+          
+         
+         .nav{
+          margin-top: 2px;
+          display: flex;
+          ;
+         }
+         .field{
+          display: flex;
+         }
+         .field1{
+          display: flex;
+         }
+         #f0:hover{
+          height: 8dvh;
+          width: 170dvh;
+          cursor: pointer;
+         }
+         #f1:hover,#f2:hover,#f3:hover{
+          height: 40dvh;
+          width: 170dvh;
+          cursor: pointer;
+         }
+         #f4:hover,#f5:hover,#f6:hover{
+          height: 5dvh;
+          width: 170dvh;
+          cursor: pointer;
+         }
+         
+        .tablet{
+          display: none;
+        }
+
+          
+         }
+        
+
+
+         
+     </style>
+</head>
+<body>
+     <fieldset id="f0" >
+          <div class="main">
+               <h1 style=" box-shadow: 0 0 10px white; border-radius: 20px;">Web Develpment Projects</h1>
+          </div>
+     </fieldset>
+     <!-- Laptop  port -->
+     <div class="laptop">
+          <!-- Html heading  -->
+          <div class="field1">
+               <fieldset id="f4" >
+                    <div class="main">
+                         <h2 style=" box-shadow: 0 0 10px white; border-radius: 20px;">HTML Projects </h2>
+                    </div>
+               </fieldset>
+               <!-- CSS HEading -->
+               <fieldset id="f5"  >
+                    <div class="main">
+                         <h2 style=" box-shadow: 0 0 10px white; border-radius: 20px;">CSS Projects</h2>
+                    </div>
+               </fieldset>
+               <!-- Javascript Heading -->
+               <fieldset id="f6" >
+                    <div class="main">
+                         <h2 style=" box-shadow: 0 0 10px white; border-radius: 20px;">JavaScript Projects</h2>
+                    </div>
+               </fieldset>
+     
+          </div>
+          <!-- HTML CONTENT  -->
+          <div class="field">
+               <fieldset id="f1" >
+                    <div class="main">
+                         <ol>
+                               <li > <summary style="color: red;font-size: 25px;"> <i style="font-size:24px" class="fa" style="color: black;">&#x2605;</i> &nbsp;Time Table Project <details id="content " >A Table is an arrangement of rows and columns. Anyone can create a table by knowing the basics of HTML(HyperText Markup Language). A table is defined by using the table tag in html  <h2><a href="Timetableproject.html" style="text-decoration: none;">Project link </a></h2></details></summary></li>
+                               <li><summary style="margin-top: 4px; font-size: 25px ; color: red;"> <i style="font-size:24px" class="fa" style="color: black;">&#x2605;</i> &nbsp;Club Site  <dfn><details id="content ">Basically I have a core member of maching learning Club at ZHCET AMU So I was designed a frontend part of the club So I was use the HTML,CSS <h2><a href="club.html" style="text-decoration: none;">Club Site Link </a></h2></details></dfn></summary></li> 
+                         </ol>
+                         
+                    </div>
+               </fieldset>
+               <!-- CSS CONTENT  -->
+               <fieldset id="f2" >
+                    <div class="main">
+     
+                    </div>
+               </fieldset>
+               <!-- JAVASCRIPT CONTENT  -->
+               <fieldset id="f3" >
+                    <div class="main">
+                         <ol>
+                              <li > <summary style="color: red;font-size: 25px;"> <i style="font-size:24px" class="fa" style="color: black;">&#x2605;</i> &nbsp;Colour Changing by Pressing Button <details id="content " > <h2><a href="Timetableproject.html" style="text-decoration: none;">Project link </a></h2></details></summary></li>
+                              <li><summary style="margin-top: 4px; font-size: 25px ; color: red;"> <i style="font-size:24px" class="fa" style="color: black;">&#x2605;</i> &nbsp;Club Site  <dfn><details id="content ">Basically I have a core member of maching learning Club at ZHCET AMU So I was designed a frontend part of the club So I was use the HTML,CSS <h2><a href="club.html" style="text-decoration: none;">Club Site Link </a></h2></details></dfn></summary></li> 
+                        </ol>
+                    </div>
+               </fieldset>
+     
+          </div>     
+     </div>
+     <!-- Tablet port  -->
+     <div class="tablet">
+          <!-- HTML HEADING AND CONTENT  -->
+          <div class="field1">
+               <fieldset id="f4" >
+                    <div class="main">
+                         <h2 style=" box-shadow: 0 0 10px white; border-radius: 20px;">HTML Projects </h2>
+                    </div>
+               </fieldset>
+               <div class="field">
+                    <fieldset id="f1" >
+                         <div class="main">
+                              <ol>
+                                    <li > <summary style="color: red;font-size: 25px;"> <i style="font-size:24px" class="fa" style="color: black;">&#x2605;</i> &nbsp;Time Table Project <details id="content " >A Table is an arrangement of rows and columns. Anyone can create a table by knowing the basics of HTML(HyperText Markup Language). A table is defined by using the table tag in html  <h2><a href="Timetableproject.html" style="text-decoration: none;">Project link </a></h2></details></summary></li>
+                                    <li><summary style="margin-top: 4px; font-size: 25px ; color: red;"> <i style="font-size:24px" class="fa" style="color: black;">&#x2605;</i> &nbsp;Club Site  <dfn><details id="content ">Basically I have a core member of maching learning Club at ZHCET AMU So I was designed a frontend part of the club So I was use the HTML,CSS <h2><a href="club.html" style="text-decoration: none;">Club Site Link </a></h2></details></dfn></summary></li> 
+                              </ol>
+                              
+                         </div>
+                    </fieldset>
+                    <!-- CSS HEADING AND CONTENT  -->
+               <fieldset id="f5" >
+                         <div class="main">
+                              <h2 style=" box-shadow: 0 0 10px white; border-radius: 20px;">CSS Projects</h2>
+                         </div>
+               </fieldset>
+               <fieldset id="f2" >
+                    <div class="main">
+     
+                    </div>
+               </fieldset>
+               <!-- JAVASCRIPT HEADING AND CONTENT  -->
+               <fieldset id="f6" >
+                    <div class="main">
+                         <h2 style=" box-shadow: 0 0 10px white; border-radius: 20px;">JavaScript Projects</h2>
+                    </div>
+               </fieldset>
+               <fieldset id="f3" >
+                    <div class="main">
+                         <ol>
+                              <li > <summary style="color: red;font-size: 25px;"> <i style="font-size:24px" class="fa" style="color: black;">&#x2605;</i> &nbsp;Colour Changing by Pressing Button <details id="content " > <h2><a href="Timetableproject.html" style="text-decoration: none;">Project link </a></h2></details></summary></li>
+                              <li><summary style="margin-top: 4px; font-size: 25px ; color: red;"> <i style="font-size:24px" class="fa" style="color: black;">&#x2605;</i> &nbsp;Club Site  <dfn><details id="content ">Basically I have a core member of maching learning Club at ZHCET AMU So I was designed a frontend part of the club So I was use the HTML,CSS <h2><a href="club.html" style="text-decoration: none;">Club Site Link </a></h2></details></dfn></summary></li> 
+                        </ol>
+                    </div>
+               </fieldset>
+               </div>
+
+     </div>
+     
+         
+</body>
+</html>
